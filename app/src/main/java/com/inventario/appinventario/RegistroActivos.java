@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -62,10 +64,11 @@ public class RegistroActivos extends AppCompatActivity {
         map.put("estado", estadoAc);
         map.put("encargado", encargadoAc);
         map.put("ubicacion", ubicacionAc);
-        mfirestore.collection("Activos").add(map).addOnFailureListener(new OnFailureListener() {
+        mfirestore.collection("Activos").add(map).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(), "Datos Guardados", Toast.LENGTH_SHORT);
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(getApplicationContext(), "Datos Guardados", Toast.LENGTH_SHORT).show();
+                finish();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
