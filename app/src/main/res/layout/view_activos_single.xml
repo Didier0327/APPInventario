@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp">
 
@@ -29,42 +29,52 @@
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="codigo"
+                    android:gravity="center"
+                    android:text="Código"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="encargado(@)"
+                    android:gravity="center"
+                    android:text="Encargado"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="equipo"
+                    android:gravity="center"
+                    android:text="Equipo"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="estado"
+                    android:gravity="center"
+                    android:text="Estado"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="ubicacion"
+                    android:gravity="center"
+                    android:text="Ubicación"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -72,7 +82,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:padding="10dp"
@@ -81,45 +91,51 @@
                 <TextView
                     android:id="@+id/codigo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="codigo"
-                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="Código"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/encargado"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="encargado"
-                    android:textSize="16sp" />
+                    android:gravity="center"
+                    android:text="Encargado"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/equipo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="equipo"
-                    android:textSize="16sp" />
+                    android:gravity="center"
+                    android:text="Equipo"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/estado"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="estado"
-                    android:textSize="16sp" />
+                    android:gravity="center"
+                    android:text="Estado"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/ubicacion"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="ubicacion"
-                    android:textSize="16sp" />
+                    android:gravity="center"
+                    android:text="Ubicación"
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

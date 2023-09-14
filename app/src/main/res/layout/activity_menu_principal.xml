@@ -24,9 +24,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="55dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/logo1" />
 
         <TextView
             android:id="@+id/textView"
@@ -122,19 +125,20 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="35dp" />
+            android:layout_height="30dp" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#ff6750a4"
+            android:backgroundTint="#12BAB6"
             android:text="Mapa del Sitio"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:iconTint="#DEDEDE" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
