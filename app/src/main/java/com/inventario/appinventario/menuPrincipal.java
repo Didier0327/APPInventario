@@ -24,4 +24,10 @@ public class menuPrincipal extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void irRegistro(View view){
+        Intent i = new Intent(this, registro.class);
+        startActivity(i);
+    }
+
+
 }
