@@ -3,8 +3,8 @@
 
 
     <string name="btn_iniciar_secion">Iniciar</string>
-    <string name="btn_reistrase">Registrases</string>
-    <string name="btn_pantalla_registro">Registrases</string>
+    <string name="btn_reistrase">Registrarse</string>
+    <string name="btn_pantalla_registro">Registrarse</string>
     <string name="btn_activos">Activos</string>
     <string name="btn_agregar_regsitro_activo">Guardar</string>
     <string name="title_activity_view_activos_single">view_activos_single</string>
