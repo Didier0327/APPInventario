@@ -47,7 +47,7 @@ public class RegistroActivos extends AppCompatActivity {
                 String ubicacionAc = ubicacion.getText().toString().trim();
 
                 if (codigoAc.isEmpty() && equipoAc.isEmpty() && estadoAc.isEmpty() && encargadoAc.isEmpty() && ubicacionAc.isEmpty() ){
-                    Toast.makeText(getApplicationContext(), "Ingrese los Datos", Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(), "Ingrese los Datos", Toast.LENGTH_SHORT).show();
 
                 }else{
                     postPet(codigoAc, equipoAc, estadoAc, encargadoAc, ubicacionAc);
@@ -73,7 +73,8 @@ public class RegistroActivos extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(), "Ingrese los Datos", Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(), "Ingrese los Datos", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }

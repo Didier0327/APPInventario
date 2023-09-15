@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -23,13 +23,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/logo1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="73dp" />
+
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center"
             android:text="Registro Activos"
-            android:textSize="34sp" />
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -37,8 +50,9 @@
 
         <EditText
             android:id="@+id/codigo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Codigo"
             android:inputType="text"
@@ -50,8 +64,9 @@
 
         <EditText
             android:id="@+id/encargado"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Encargado"
             android:inputType="text" />
@@ -62,8 +77,9 @@
 
         <EditText
             android:id="@+id/estado"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Estado"
             android:inputType="text" />
@@ -74,8 +90,9 @@
 
         <EditText
             android:id="@+id/equipo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Equipo"
             android:inputType="text" />
@@ -86,22 +103,26 @@
 
         <EditText
             android:id="@+id/ubicacion"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Ubicación"
             android:inputType="text" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="68dp" />
+            android:layout_height="39dp" />
 
         <Button
             android:id="@+id/guardar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="#12BAB6"
-            android:text="@string/btn_agregar_regsitro_activo" />
+            android:text="@string/btn_agregar_regsitro_activo"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
