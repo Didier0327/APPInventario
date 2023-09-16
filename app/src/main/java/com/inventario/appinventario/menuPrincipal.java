@@ -14,7 +14,7 @@ public class menuPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_menu_principal);
     }
 
-    public void irAvtivos(View view){
+    public void irActivos(View view){
         Intent i = new Intent(this, RegistroActivos.class);
         startActivity(i);
     }
@@ -29,5 +29,19 @@ public class menuPrincipal extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void irBajas(View view){
+        Intent i = new Intent(this, bajas.class);
+        startActivity(i);
+    }
+
+    public void irSalidas(View view){
+        Intent i = new Intent(this, Salidas.class);
+        startActivity(i);
+    }
+
+    public void irIngresos(View view){
+        Intent i = new Intent(this, Ingresos.class);
+        startActivity(i);
+    }
 
 }

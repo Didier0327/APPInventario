@@ -35,6 +35,15 @@
             android:name=".registro"
             android:exported="false" />
         <activity
+            android:name=".bajas"
+            android:exported="false" />
+        <activity
+            android:name=".Salidas"
+            android:exported="false" />
+        <activity
+            android:name=".Ingresos"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
