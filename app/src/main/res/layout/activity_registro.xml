@@ -39,7 +39,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView6"
@@ -49,6 +49,15 @@
             android:text="Registro de Usuario"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="#12BAB6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
 
         <Space
             android:layout_width="match_parent"

@@ -44,9 +44,22 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="#12BAB6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.94"
+            tools:layout_editor_absoluteX="-26dp" />
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="62dp" />
+            android:layout_height="54dp" />
 
         <EditText
             android:id="@+id/codigo"

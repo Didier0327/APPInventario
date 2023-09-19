@@ -139,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#12BAB6"
+            android:onClick="irMapa"
             android:text="Mapa del Sitio"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#FFFFFF"

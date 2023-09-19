@@ -1,17 +1,17 @@
 package com.inventario.appinventario;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class menuPrincipal extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Mapa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_principal);
+        setContentView(R.layout.activity_mapa_del_sitio);
     }
 
     public void irActivos(View view){
@@ -41,10 +41,6 @@ public class menuPrincipal extends AppCompatActivity {
 
     public void irIngresos(View view){
         Intent i = new Intent(this, Ingresos.class);
-        startActivity(i);
-    }
-    public void irMapa(View view){
-        Intent i = new Intent(this, Mapa.class);
         startActivity(i);
     }
 
